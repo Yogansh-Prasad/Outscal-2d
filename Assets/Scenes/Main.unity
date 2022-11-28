@@ -382,6 +382,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1373443917}
   speed: 8
+  jump: 2
+  Grounded: 1
+  CanJump: 0
 --- !u!95 &1373443917 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6965901631721129151, guid: 715e258a7e0435f458aa8cb8304bace5,
