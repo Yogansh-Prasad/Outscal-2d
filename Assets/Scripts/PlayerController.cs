@@ -24,9 +24,7 @@ public class PlayerController : MonoBehaviour
         MoveCharacter(horizontal,vertical);
         PlayerMovementAnimation(horizontal,vertical);
 
-    }
-
-    
+    }    
 
     private void MoveCharacter(float horizontal, float vertical) 
     {
