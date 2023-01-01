@@ -34,7 +34,11 @@ public class EnemyController : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        transform.localScale = new Vector2(-(Mathf.Sign(myrigidbody.velocity.x)), transform.localScale.y);
+        if (collision.gameObject.layer ==6) 
+        { 
+            transform.localScale = new Vector2(-(Mathf.Sign(myrigidbody.velocity.x)), transform.localScale.y);
+        }
+        
     }
 
 
