@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public bool Grounded = true;    
     private Rigidbody2D rb2d;
     public ScoreController scoreController;
+    public GameOverController gameOverController;
 
     private void Awake()
     {
@@ -21,13 +22,11 @@ public class PlayerController : MonoBehaviour
     public void KillPlayer()
     {
         Debug.Log("Player killed by enemy");
-        ReloadScene();
+        gameOverController.PlayerDied();    
+        this.enabled = false;
     }
 
-    private void ReloadScene()
-    {
-        SceneManager.LoadScene(0);
-    }
+    
 
     void Update()
     {
