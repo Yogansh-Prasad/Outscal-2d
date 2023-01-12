@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb2d;
     public ScoreController scoreController;
     public GameOverController gameOverController;
+    public LevelOverController levelOverController;
 
     private void Awake()
     {
@@ -25,6 +26,9 @@ public class PlayerController : MonoBehaviour
         gameOverController.PlayerDied();    
         this.enabled = false;
     }
+
+    
+
 
     
 
