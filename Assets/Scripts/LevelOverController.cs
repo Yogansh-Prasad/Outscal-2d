@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class LevelOverController : MonoBehaviour
 {
     public GameObject gameobject;
+    public ParticleController Gameover;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.GetComponent<PlayerController>() != null)
@@ -15,6 +16,7 @@ public class LevelOverController : MonoBehaviour
 
             gameobject.SetActive(true);
 
+            Gameover.PlayEffect();
             
 
 
