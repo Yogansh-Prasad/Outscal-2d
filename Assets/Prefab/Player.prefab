@@ -251,10 +251,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 6965901631721129151}
   speed: 8
-  jump: 20
+  jump: 10
   Grounded: 1
   scoreController: {fileID: 0}
   gameOverController: {fileID: 0}
+  levelOverController: {fileID: 0}
 --- !u!114 &1415899930
 MonoBehaviour:
   m_ObjectHideFlags: 0
